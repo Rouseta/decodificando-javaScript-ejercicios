@@ -31,12 +31,13 @@ const moment = require("moment");
 // Por cierto, la fecha de referencia para saber si es 25 de diciembre es Dec 25, 2021.
 function daysToXmas(date) {
     const referenceData = moment('2021-12-25');
-    const fechaHoy = moment('2022-01-30');
+    const fechaHoy = moment('2021-12-25');
 
     const difference = referenceData.diff(fechaHoy, 'days')
 
 
 
     console.log(difference);
+    return date
 }
 daysToXmas()
